@@ -46,7 +46,7 @@ void reset_manager(void)
 	gets(str);
 	for(int i=0;i<ma_count;i++)
 	{
-		if(strcmp(ma[i].name,str)==0 && ma[i].index!=1)
+		if(strcmp(ma[i].name,str)==0 && ma[i].index==1)
 		{
 			strcpy(ma[i].password,"123456");
 			puts("重置成功");
