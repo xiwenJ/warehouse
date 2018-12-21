@@ -118,7 +118,7 @@ void unlock_teacher(void)
 	for(int i = 0;i<tea_count;i++)
 	{
 		sprintf(str1,"%d",tea[i].job_num);
-		if(0 == strcmp(str,tea[i].name) || 0 == strcmp(str,str1) && 1!= tea[i].index)
+		if(0 == strcmp(str,tea[i].name) || 0 == strcmp(str,str1) && 1== tea[i].index)
 		{
 			tea[i].index = 0;
 			puts("解锁该教职工账号成功！");
